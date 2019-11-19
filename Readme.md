@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Серяпов](https://up.htmlacademy.ru/adaptive/18/user/896771).
-* Наставник: [Андрей Колесников](https://htmlacademy.ru/profile/m1roku).
+* Наставник: [Андрей Колесников](https://htmlacademy.ru/profile/id477095).
 
 ---
 
