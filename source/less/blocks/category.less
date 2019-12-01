@@ -8,32 +8,145 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 19px;
-  padding-left: 20px;
   background-color: @gray-light;
-}
-
-.category__title{
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.category__list {
-  padding: 0 20px;
-}
-
-.category__item {
   padding-left: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
 
-.category__item--diet {
-  padding-right: 40px;
+.category__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding-top: 32px;
+  padding-left: 72px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 3px;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: @button-color;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+  }
 }
 
-.category__item--diet::before {
-  background: url(../img/icon-cat-slim.svg) no-repeat;
+.category__title--diet {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 11px;
+    z-index: 2;
+
+    display: block;
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+}
+
+.category__title--gain {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -6px;
+    z-index: 2;
+
+    display: block;
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+}
+
+.category__description {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.category__link  {
+  position: relative;
+
+  margin-top: 22px;
+  margin-bottom: 21px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: @black;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+
+    display: block;
+    width: 240px;
+    height: 1px;
+    margin-top: -1px;
+
+    background-color: @gray;
+  }
+
+  &::after {
+    content: "";
+
+    display: inline-block;
+    width: 24px;
+    height: 11px;
+    margin-top: 2px;
+    margin-left: 12px;
+
+    vertical-align: top;
+
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 33px;
+
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.category__list {
+  padding: 0 20px;
+}
+
+.category__item--diet {
+  padding-right: 40px;
 }
 
 .category__item--gain {
