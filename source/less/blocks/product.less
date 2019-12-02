@@ -1,0 +1,96 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 280px;
+  padding: 0 20px;
+  border-bottom: 1px solid @gray;
+}
+
+.product-card__button {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.product-card__description {
+  display: block;
+  width: 140px;
+}
+
+.product-card__description {
+  display: block;
+  width: 140px;
+}
+
+.product-card__image {
+  width: 140px;
+  height: 100%;
+}
+
+.product-card__title {
+  width: 77px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 12px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @default-font;
+  text-transform: uppercase;
+}
+
+.product-card__link-title {
+  text-decoration: none;
+  color: @black;
+}
+
+.product-card__info {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-card__line {
+  min-width: 140px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: @second-font;
+  color: @black;
+}
+
+.product-card__field {
+  width: 50%;
+}
+
+.product-card__value {
+  width: 50%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.product-plus {
+  width: 280px;
+}
+
+.product-plus__button {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-right: 38px;
+  padding-left: 38px;
+  // background: url("../img/icon-plus.svg") no-repeat 20px 0; Вот так он SVG отображает
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 50%;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background: url("../img/icon-plus.svg") no-repeat 0 0;
+    //А вот так - нет. Почему?
+  }
+}
