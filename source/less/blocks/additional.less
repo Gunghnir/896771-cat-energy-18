@@ -8,15 +8,29 @@
 .additional__list {
   list-style-type: none;
   padding: 0 20px;
+  margin-top: 0;
 }
 
 .additional__item {
   list-style: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.additional__item h3 {
+  text-transform: uppercase;
+  font-size: 400;
+  font-stretch: @default-font;
+  margin-top: 16px;
 }
 
 .additional__title {
+  display: inline-block;
+  text-align: left;
   padding-top: 26px;
-  padding-bottom: 79px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  margin-bottom: 0;
 
   font-size: 24px;
   line-height: 24px;
@@ -24,31 +38,15 @@
   font-family: @default-font;
   color: @black;
 
-  &::before {
-    content: "";
-
-    display: inline-block;
-    width: 100vw;
-    height: 3px;
-    margin-right: 40px;
-    margin-left: -100vw;
-
-    vertical-align: middle;
-
-    background-color: @button-color;
-  }
-
   &::after {
     content: "";
 
     display: inline-block;
-    width: 100vw;
+    width: 49px;
     height: 3px;
-    margin-right: -100vw;
-    margin-left: 40px;
+    margin-left: 25px;
 
     vertical-align: middle;
-
     background-color: @button-color;
   }
 }
