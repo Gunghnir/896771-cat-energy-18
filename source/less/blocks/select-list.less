@@ -59,7 +59,7 @@
   }
 }
 
-.select-list__input {
+.select-list__input { 
   margin-right: 20px;
   margin-left: 30px;
 
@@ -72,10 +72,10 @@
 
   &:checked + .select-list__label::before {
     display: block;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.75);
   }
 
   &:focus + .select-list__label::before {
-    outline: 2px auto #4d90fe;
+    outline: 2px auto @outline-color;
   }
 }
