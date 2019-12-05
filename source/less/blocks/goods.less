@@ -1,11 +1,15 @@
 .goods-description {
   margin: 0;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .goods-line {
   display: flex;
-  justify-content: space-between;
   width: 280px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .goods__amount {
@@ -13,6 +17,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  width: 200px;
+
+  text-align: left;
   font-family: @second-font;
   color: @black;
 }
@@ -23,8 +30,9 @@
   font-size: 14px;
   line-height: 14px;
   font-family: @second-font;
+  width: 70px;
+
   text-align: right;
-  margin-left: auto;
   color: @black;
   text-transform: uppercase;
 }
