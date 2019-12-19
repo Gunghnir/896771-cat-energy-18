@@ -14,3 +14,17 @@
   height: 66px;
   width: 200px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    margin-top: 21px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__line--toggle {
+    display: none;
+  }
+}
